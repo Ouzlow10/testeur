@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "appli-reservation-service",
+  "private_key_id": "c07c74e15b324d307bfd0a2f0cedcd8e111d8ccc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDSrqeOn/2NDRaO\nnF/ZmB3cXMntJGxiL14+p3T828xBm9OFT5jS+i6EdKieJng1emmZJZtKEsVRkbU2\nSljjLaCPn2UKeYK+bacWt5mxKgezbeJccxnrLP9Jc9GTkrTk+x0WQtQVEuwC70e3\nl8mzX58T0v+U0x+3AMTjKYayw9Ete5sQjtSnyhMI15roaRUvAlYBJBN5dW0IAktr\na2ZXkaEyMFyd9394MqyJ71Fvv1eXxMbhUfpVCrYUKKcDgvoepPv3cO35IRDjNQHQ\nsTE9n3DZdgsR13n3tPvbFXqnhkuLazFHeuCR6pKMwVe9dbsLlQ4PWn1ejnpulv86\n/QG9cUHxAgMBAAECggEAANK6/74ZKXO8c6ORpg3vqW6RISiiFgbfelURCmMhNt0p\nEBl31FSzCXRTe5U0xWg4WQdmJj2hKNy98ZOsKdyR9texh09C2xO+ejKu0nvynmFK\nt+/g8Tvadj7yKd6CD4453o41qgyqMId+7y0kFgvkySj7E8m4ozBZBJZzItgMJV5n\nQ6IooQu4pZjE+MVUSxp9fHpL7w1jDxc8mAGu8psLoiCg00yj0BwoRTozt451zcmb\nPL3ZnnirDrkrOryycTReE0a9mrWzC8+1W9nV0UC9yXNMqVk3I1CS6TiPggdD7qNg\npf0ujiYYlw6NhaJk1kDWS5M/IFXuw/v3072WJ/cxwQKBgQDueXouxnYLP0Pcf5Wn\ntbotVVHuTzAvaLuKeTWuoyZYrhzDowQ3eMm4KsVercWvFe+4RmbGZ55T3hTAR7Hh\nGv7dmBwalVStDUbPhxiYYcZB282BKUDMUha2k/x1aZHBugr7DBTHUD0U7emq6KRc\nore4RTXS+hLE5NiZsFn+Qt/YsQKBgQDiKk8vBGglNlJg9F2kZxC1K0HE1vhV83XO\nwxG1qo2pMcXJ6m0zoLZ+JBSyU9MuqgmE+m7fYGuq3U9/Gl4CTkIs+ZpNmNtRZFQg\nW4XO8ejD00UTeh0Ytzbx8NWu3JSp6A+B6Na24yyohQS11FbtakCzKsPs20UvB2q7\nD+DKEM5NQQKBgCslHT7zNw4n3w44ownZrhpfklgsSYp6R1vxPA4hhGGM9rVKfAvR\nNaW1T0om5Fod/OX5DsUcoB+KUXTMQ9l3Od87kvIYTF6WxVXsmj2PiwAFVXPl08xj\nmapksctIU0+aajwrXmMFGFf+B0Wdm4cLBXQ4SVmnVtf6k1mS92UyEi+xAoGABhEY\neqxllsn0P8GOWYCiRBna88rIcpXLTTaSXQssLaO2KIpvT3k6K/wPyhDRk2jgRH7r\nRnaxrK2vGju81db/k3FGoFo/V9mXIB8UYc6/bbFXIwSdjzIq+SZ6tOwZ2MzuzY9P\nYyyI4CRhUfdWNZwqDCRTiSEApBhQ1p/Aaes1fYECgYEAnNEUw+/QtHS/nSDSZ+nC\n56DWw2GTYqK9hgrv6b2nS1zfeRnxFekYGOoZlHelADmbCCheIJA3Ccp7ovfjBAqv\nF3ZN3JiTMzumtaLnXVRjo2tynUuJcylBeZEet9GRi+kIf7YLysjz6R7tAkkKsNxn\nwj//Ri2M6NePI7AUaqiAkyg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-n0tct@appli-reservation-service.iam.gserviceaccount.com",
+  "client_id": "109204164349930820516",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-n0tct%40appli-reservation-service.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
