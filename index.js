@@ -26,7 +26,7 @@ const firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   const admin = require('firebase-admin');
  // const serviceAccount = require("/home/linux/Bureau/Stage_2SI/Mon_api_firebase/FirebaseService.json");
-  const serviceAccount=require('/home/ousmane-ndao/Downloads/reservationservice_apirest_nodejs-main/FirebaseService.json');  
+  const serviceAccount=require('https://github.com/Ouzlow10/testeur/blob/master/FirebaseService.json');  
   admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
   });
@@ -56,8 +56,8 @@ const https = require('https');
 const fs = require('fs');
 const httpServer = http.createServer(app);
 const options = {
-  key: fs.readFileSync('/home/ousmane-ndao/Downloads/reservationservice_apirest_nodejs-main/server.key'),
-  cert: fs.readFileSync('/home/ousmane-ndao/Downloads/reservationservice_apirest_nodejs-main/server.crt')
+  key: fs.readFileSync('https://github.com/Ouzlow10/testeur/blob/master/server.key'),
+  cert: fs.readFileSync('https://github.com/Ouzlow10/testeur/blob/master/server.crt')
 };
 
 const httpsServer=https.createServer(options, app);
