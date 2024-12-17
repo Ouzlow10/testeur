@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run nodemon index.js",
+    "deploy": "gh-pages -d index.js",
     "start": "nodemon index.js",
-    "homepage": "https://[your-github-username].github.io/[repo-name]",
+    "homepage": "https://Ouzlow10.github.io//testeur",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
