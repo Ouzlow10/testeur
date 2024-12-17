@@ -4,16 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build",
     "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "node index.js",
-    "heroku-prebuild":"npm install --dev"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ouzlow10/my_first_appli_nodejs"
-  },
+  "repository": "https://github.com/Ouzlow10/my_first_appli_nodejs",
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
