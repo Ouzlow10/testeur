@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
+    "homepage": "https://[your-github-username].github.io/[repo-name]",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -21,5 +22,8 @@
     "firebase": "^11.0.2",
     "firebase-admin": "^12.7.0",
     "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }

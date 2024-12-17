@@ -1045,18 +1045,7 @@ async function updateProfes(req,res){
                             nom_tech=req.body.nom ? req.body.nom : doc.data().nom;
                             prenom_tech=req.body.prenom ? req.body.prenom : doc.data().prenom;
                             nombreEff=doc.data().nombreEff;
-                            telephone=req.body.telephone ? req.body.telephone :doc.data().telephone;
-                           // profession_tech=req.body.profession ? req.body.profession : doc.data().profession;
-                           /*  if (!req.body.nom) {
-                                nom_tech=doc.data().nom;
-                            } else {
-                                nom_tech=req.body.nom
-                            } 
-                            if (!req.body.prenom) {
-                                prenom_tech=doc.data().prenom;
-                            } else {
-                                prenom_tech=req.body.prenom
-                            }*/
+                           
                             if (!req.body.profession) {
                                 profession_tech=doc.data().profession;
                             } else {
@@ -2014,6 +2003,30 @@ async function deleteChoice (req,res){
             
         }})();
 }
+//RASA PART 
+const axios = require('axios');
+
+async function ResponseRasa(req,res) {
+    (async ()=>{
+        try {
+           const RASA_SERVER_URL = 'http://localhost:5005/webhooks/rest/webhook';
+           const { message } = req.body; // Get message and sender ID from client
+
+        const response = await axios.post(RASA_SERVER_URL, {
+            message: message
+        });
+        console.log(response.data)
+        res.json(response.data);
+
+
+        } catch (error) {
+            console.error("Error connecting to Rasa:", error.message);
+            res.status(500).json({ error: "Failed to connect to Rasa" });
+        }})();
+
+
+}
+app.post('/chat',ResponseRasa);
 app.post('/api/register',registerChecking,registerUser);
 app.get('/api/login',login);
 app.post('/api/logout', authentification,logoutUser);
