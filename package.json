@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "nodemon index.js",
+    "build": "npm install && npm run build",
     "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node index.js",
+    "heroku-prebuild":"npm install --dev"
   },
   "repository": {
     "type": "git",
