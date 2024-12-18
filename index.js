@@ -1,7 +1,6 @@
 // file: src/app.js 
 
 const express = require('express');
-require("dotenv").config();
 const firebase = require("firebase/app");
 const cookieParser = require('cookie-parser');
 require("dotenv").config();
@@ -9,6 +8,10 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 const http = require('http');
 const bcrypt = require("bcryptjs");
+const dotenv = require('dotenv');
+dotenv.config();
+console.log(`Your port is NNNN ${process.env.PORT}`); // undefined
+dotenv.config();
 app.use(express.json());
 app.use(cookieParser());
 const cors=require('cors');
@@ -26,7 +29,8 @@ const firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   const admin = require('firebase-admin');
  // const serviceAccount = require("/home/linux/Bureau/Stage_2SI/Mon_api_firebase/FirebaseService.json");
-  const serviceAccount=require('/home/ousmane-ndao/Downloads/reservationservice_apirest_nodejs-main/FirebaseService.json');  
+  const serviceAccount=require(`${process.env.CREDENTIALS}`);
+    //'/home/ousmane-ndao/Downloads/reservationservice_apirest_nodejs-main/FirebaseService.json');  
   admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
   });
@@ -56,8 +60,9 @@ const https = require('https');
 const fs = require('fs');
 const httpServer = http.createServer(app);
 const options = {
-  key: fs.readFileSync('/home/ousmane-ndao/Downloads/reservationservice_apirest_nodejs-main/server.key'),
-  cert: fs.readFileSync('/home/ousmane-ndao/Downloads/reservationservice_apirest_nodejs-main/server.crt')
+
+  key: fs.readFileSync(`${process.env.server_key}`),
+  cert: fs.readFileSync(`${process.env.server_crt}`)
 };
 
 const httpsServer=https.createServer(options, app);
