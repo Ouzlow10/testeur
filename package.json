@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "build": "babel src -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "https://github.com/Ouzlow10/my_first_appli_nodejs",
@@ -25,6 +26,9 @@
     "yarn": "^1.22.22"
   },
   "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
     "gh-pages": "^6.2.0"
   }
 }
