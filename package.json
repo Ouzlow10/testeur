@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "https://github.com/Ouzlow10/my_first_appli_nodejs",
@@ -21,7 +21,8 @@
     "express": "^4.21.2",
     "firebase": "^11.0.2",
     "firebase-admin": "^12.7.0",
-    "web-push": "^3.6.7"
+    "web-push": "^3.6.7",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "gh-pages": "^6.2.0"

@@ -10,13 +10,13 @@ const http = require('http');
 const bcrypt = require("bcryptjs");
 const dotenv = require('dotenv');
 dotenv.config();
-console.log(`Your port is NNNN ${process.env.PORT}`); // undefined
-dotenv.config();
 app.use(express.json());
 app.use(cookieParser());
 const cors=require('cors');
 app.use(cors({origin:true}));
-const firebaseConfig = {
+
+const firebaseConfig =
+ {
     apiKey: "AIzaSyBTTpAKsSjammAmwXTzzNp_-Nh0BZ6cbj4",
     authDomain: "appli-reservation-service.firebaseapp.com",
     databaseURL: "https://appli-reservation-service-default-rtdb.firebaseio.com",
@@ -24,18 +24,19 @@ const firebaseConfig = {
     storageBucket: "appli-reservation-service.firebasestorage.app",
     messagingSenderId: "226926139971",
     appId: "1:226926139971:web:67b77268c3446b6359d2f6"
-  };
+}
 
-  firebase.initializeApp(firebaseConfig);
-  const admin = require('firebase-admin');
- // const serviceAccount = require("/home/linux/Bureau/Stage_2SI/Mon_api_firebase/FirebaseService.json");
-  const serviceAccount=require(`${process.env.CREDENTIALS}`);
-    //'/home/ousmane-ndao/Downloads/reservationservice_apirest_nodejs-main/FirebaseService.json');  
-  admin.initializeApp({
+firebase.initializeApp(firebaseConfig);
+const admin = require('firebase-admin');
+
+  
+//const serviceAccount = require("/home/ousmane-ndao/Downloads/reservationservice_apirest_nodejs-main/FirebaseService.json");
+serviceAccount=require(process.env.CREDENTIALS);
+admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-  });
-  const maDate = new Date();
-  var t = new Date(1970, 0, 1); // Epoch
+});
+const maDate = new Date();
+var t = new Date(1970, 0, 1); // Epoch
   /* t.setSeconds(1732975800);
   console.log(`Voici la date de t ${t}`) */
   const { 
